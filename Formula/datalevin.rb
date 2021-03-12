@@ -1,5 +1,5 @@
 class Datalevin < Formula
-  desc "Provides a simple, fast and durable Datalog database"
+  desc "Simple, fast and durable Datalog database"
   homepage "https://github.com/juji-io/datalevin"
   version "0.4.25"
   license "EPL-1.0"
