@@ -1,0 +1,21 @@
+class Datalevin < Formula
+  desc "A simple, fast and durable Datalog database"
+  homepage "https://github.com/juji-io/datalevin"
+  license "EPL-1.0"
+  version "${VERSION}"
+
+  if OS.linux?
+    url "https://github.com/juji-io/datalevin/releases/download/${VERSION}/dtlv-${VERSION}-ubuntu-latest-amd64.zip"
+    sha256 "${LINUX_SHA}"
+  else 
+    url "https://github.com/juji-io/datalevin/releases/download/${VERSION}/dtlv-${VERSION}-macos-latest-amd64.zip"
+    sha256 "${MACOS_SHA}"
+  end
+
+  bottle :unneeded
+
+  def install
+    bin.install "dtlv"
+  end
+
+end
