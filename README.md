@@ -1,5 +1,7 @@
 # Huahaiy Brew
 
+This repository hosts all the homebrew forumlae I release to the public.
+
 ## Available Formulae
 
 * [datalevin](https://github.com/juji-io/datalevin): a simple, fast and durable Datalog database.
