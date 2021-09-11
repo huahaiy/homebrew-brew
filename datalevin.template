@@ -11,7 +11,7 @@ class Datalevin < Formula
     sha256 "${LINUX_SHA}"
   end
 
-  on_linux do
+  on_macos do
     url "https://github.com/juji-io/datalevin/releases/download/${VERSION}/dtlv-${VERSION}-macos-latest-amd64.zip"
     sha256 "${MACOS_SHA}"
   end
