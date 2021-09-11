@@ -6,14 +6,14 @@ class Datalevin < Formula
 
   bottle :unneeded
 
-  on_linux do
-    url "https://github.com/juji-io/datalevin/releases/download/${VERSION}/dtlv-${VERSION}-ubuntu-latest-amd64.zip"
-    sha256 "${LINUX_SHA}"
-  end
-
   on_macos do
     url "https://github.com/juji-io/datalevin/releases/download/${VERSION}/dtlv-${VERSION}-macos-latest-amd64.zip"
     sha256 "${MACOS_SHA}"
+  end
+
+  on_linux do
+    url "https://github.com/juji-io/datalevin/releases/download/${VERSION}/dtlv-${VERSION}-ubuntu-latest-amd64.zip"
+    sha256 "${LINUX_SHA}"
   end
 
   def install
