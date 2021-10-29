@@ -11,7 +11,7 @@ class Datalevin < Formula
     sha256 "3725deb862b3e4490cba833367f2ea42d3de2b578867c02f6d9c102fdd6671f1"
   else
     url "https://github.com/juji-io/datalevin/releases/download/0.5.27/dtlv-0.5.27-macos-latest-amd64.zip"
-    sha256 ""
+    sha256 "7ba195f469ac69b4774263d15cbd7d385421012d1143371ac65ecf3871993263"
   end
 
   def install
