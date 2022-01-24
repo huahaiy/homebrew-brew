@@ -4,8 +4,6 @@ class Datalevin < Formula
   version "0.5.28"
   license "EPL-1.0"
 
-  bottle :unneeded
-
   if OS.linux?
     url "https://github.com/juji-io/datalevin/releases/download/0.5.28/dtlv-0.5.28-ubuntu-latest-amd64.zip"
     sha256 "a6dfce8567aa0ea5d672740202f60ae92757ab93c1dea123186598511d6268b0"
