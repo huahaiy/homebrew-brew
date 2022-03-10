@@ -1,15 +1,15 @@
 class Datalevin < Formula
   desc "Simple, fast and versatile Datalog database"
   homepage "https://github.com/juji-io/datalevin"
-  version "0.5.31"
+  version "0.6.0"
   license "EPL-1.0"
 
   if OS.linux?
-    url "https://github.com/juji-io/datalevin/releases/download/0.5.31/dtlv-0.5.31-ubuntu-latest-amd64.zip"
-    sha256 "a6813c259ab1519d579db96cae11d962bda51dd236d3bd70f8593ee9af53c784"
+    url "https://github.com/juji-io/datalevin/releases/download/0.6.0/dtlv-0.6.0-ubuntu-latest-amd64.zip"
+    sha256 "fdca0f1e5c76fc4dd35eb2809f126588f17934d8e317e2c1f9e117ee654d5edb"
   else
-    url "https://github.com/juji-io/datalevin/releases/download/0.5.31/dtlv-0.5.31-macos-latest-amd64.zip"
-    sha256 "677840c1be82a6250765a677791d41127d8abb571b7a92840536c44e1e9f12b7"
+    url "https://github.com/juji-io/datalevin/releases/download/0.6.0/dtlv-0.6.0-macos-latest-amd64.zip"
+    sha256 "055f96dd3d617205f54d7ee88eaf3abd0506afbb77858bb76f88c18b845b9915"
   end
 
   def install
