@@ -4,13 +4,18 @@ version=$(curl --silent "https://api.github.com/repos/juji-io/datalevin/tags" | 
 
 wget https://github.com/juji-io/datalevin/releases/download/$version/dtlv-$version-ubuntu-latest-amd64.zip
 wget https://github.com/juji-io/datalevin/releases/download/$version/dtlv-$version-macos-latest-amd64.zip
+wget https://github.com/juji-io/datalevin/releases/download/$version/dtlv-$version-macos-latest-aarch64.zip
 
 linux="dtlv-$version-ubuntu-latest-amd64.zip"
-macos="dtlv-$version-macos-latest-amd64.zip"
+macos_amd64="dtlv-$version-macos-latest-amd64.zip"
+macos_aarch64="dtlv-$version-macos-latest-aarch64.zip"
+
 linux_sha=$(sha256sum "$linux" | cut -f 1 -d " ")
-macos_sha=$(sha256sum "$macos" | cut -f 1 -d " ")
+macos_amd64_sha=$(sha256sum "$macos_amd64" | cut -f 1 -d " ")
+macos_aarch64_sha=$(sha256sum "$macos_aarch64" | cut -f 1 -d " ")
 
 sed -e "s/\${i}/1/" -e "s/\${VERSION}/$version/g" \
     -e "s/\${LINUX_SHA}/$linux_sha/g" \
-    -e "s/\${MACOS_SHA}/$macos_sha/g" \
+    -e "s/\${MACOS_AMD64_SHA}/$macos_amd64_sha/g" \
+    -e "s/\${MACOS_AARCH64_SHA}/$macos_aarch64_sha/g" \
     datalevin.template > Formula/datalevin.rb
