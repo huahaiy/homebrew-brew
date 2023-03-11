@@ -1,6 +1,6 @@
 #!/usr/bin/env /bin/bash
 
-version=$(curl --silent "https://api.github.com/repos/juji-io/datalevin/tags" | jq -r '.[0].name')
+version=$(curl --silent "https://api.github.com/repos/juji-io/datalevin/tags" | jq -r '.[1].name')
 
 wget https://github.com/juji-io/datalevin/releases/download/$version/dtlv-$version-ubuntu-latest-amd64.zip
 wget https://github.com/juji-io/datalevin/releases/download/$version/dtlv-$version-macos-latest-amd64.zip
