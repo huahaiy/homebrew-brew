@@ -1,19 +1,19 @@
 class Datalevin < Formula
   desc "Simple, fast and versatile Datalog database"
   homepage "https://github.com/juji-io/datalevin"
-  version "0.8.7"
+  version "0.8.8"
   license "EPL-1.0"
 
   if OS.linux?
-    url "https://github.com/juji-io/datalevin/releases/download/0.8.7/dtlv-0.8.7-ubuntu-latest-amd64.zip"
-    sha256 "d8a91d52e441d1cadf22d619c235364bdcf539d4d8d21abde4deee2a7e63d115"
+    url "https://github.com/juji-io/datalevin/releases/download/0.8.8/dtlv-0.8.8-ubuntu-latest-amd64.zip"
+    sha256 "553146e8eb92ade542cbf08886643f1c88e1528a1b4cca76252b762a4badfde6"
   else
     if Hardware::CPU.arm?
-      url "https://github.com/juji-io/datalevin/releases/download/0.8.7/dtlv-0.8.7-macos-latest-aarch64.zip"
-      sha256 "93efcb5766442a0c8e85efc5b272511729a046f4bdeda58b63ef6f0c0b1908b9"
+      url "https://github.com/juji-io/datalevin/releases/download/0.8.8/dtlv-0.8.8-macos-latest-aarch64.zip"
+      sha256 "f62a5d2b773e54a9805b8bb4037f58eaf187c78438a7060dd274ab07761dc67c"
     else
-      url "https://github.com/juji-io/datalevin/releases/download/0.8.7/dtlv-0.8.7-macos-latest-amd64.zip"
-      sha256 "936c8da560d9a58834bb289f13c6ef72f9b9f606a8dc3e25040cb8f649e77b27"
+      url "https://github.com/juji-io/datalevin/releases/download/0.8.8/dtlv-0.8.8-macos-latest-amd64.zip"
+      sha256 "b274023c7e5d999465fa9501fd228c5ff9695be40c2b35269e18ab493edb31d9"
     end
   end
 
