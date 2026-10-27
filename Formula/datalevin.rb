@@ -1,15 +1,15 @@
 class Datalevin < Formula
   desc "Simple, fast and versatile Datalog database"
   homepage "https://github.com/datalevin/datalevin"
-  version "1.2.7"
+  version "1.2.8"
   license "EPL-1.0"
 
   if OS.linux?
-    url "https://github.com/datalevin/datalevin/releases/download/1.2.7/dtlv-1.2.7-ubuntu-22.04-amd64.zip"
-    sha256 "539c0d1c9ddc9da76868710766e59b72859322f92e7e4193129f058ddfee7b0d"
+    url "https://github.com/datalevin/datalevin/releases/download/1.2.8/dtlv-1.2.8-ubuntu-22.04-amd64.zip"
+    sha256 "1c10c350d1478691887d5d113d821298c2e206afdfe0675cc238eea82ed80f7c"
   else
-    url "https://github.com/datalevin/datalevin/releases/download/1.2.7/dtlv-1.2.7-macos-14-aarch64.zip"
-    sha256 "01a72fa44dd6b207f0d4f34357fcaa3e1ed3d018fcec45ee4804ff1e546c35e4"
+    url "https://github.com/datalevin/datalevin/releases/download/1.2.8/dtlv-1.2.8-macos-14-aarch64.zip"
+    sha256 "11c8570beff101682253cd5380dcd555f026cdfff75c2c05873ca7355b06d109"
   end
 
   def install
